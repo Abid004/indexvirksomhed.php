@@ -1,0 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+.glass{
+    width: 100%;
+    float: right;
+    top:-1950px
+}
