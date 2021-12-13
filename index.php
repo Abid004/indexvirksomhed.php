@@ -1,17 +1,19 @@
 <?php
 include("./function.php");
 include("./controlle.php");
+include("./functionall.php");
 ?>
+
 <hr>
 <!DOCTYPE html>
-</html>
+
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width. initial-scale=1.0">
-        <title>Prototype(Farstrup Furniture A/S)</title>
-        <link rel = "stylesheet" href="style.css">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width. initial-scale=1.0">
+   <title>Prototype(Farstrup Furniture A/S)</title>
+   <link rel = "stylesheet" href="style.css">
 </head>
 <style>
   p { 
@@ -20,16 +22,16 @@ include("./controlle.php");
   img { 
    
     position: relative;
-    top: -1950px;
-    width: 140px;
+    top: -5100px;
+    width: 170px;
     border-radius: 40PX;
     float: right;
-    height: 125px;
+    height: 177px;
   }
   </style>
   <div class= "container">
     <div class= "glass">
- <img src="images/pp.jpeg", style = "top:-1950px">
+ <img src="images/pp.jpeg", style = "top:-5100px">
 </div>
 <div class= "container">
     <div class= "glass">
@@ -87,22 +89,76 @@ include("./controlle.php");
     <div class= "glass">
  <img src="images/Gyngestol183.jpeg",>
  </div>
-<body bgcolor="#008000">
-  <form method="post">
-    <input type="text" name="product">
-    <butto type="submit">Add</button>
+ <img src="images/Multiplus5040.jpeg",>
+ </div>
+ <div class= "container">
+    <div class= "glass">
+ <img src="images/Homeline 6311.jpeg",>
+ </div>
+ <div class= "container">
+    <div class= "glass">
+ <img src="images/Homeline6341.jpeg",>
+ </div>
+ <div class= "container">
+    <div class= "glass">
+ <img src="images/Fastoflex 5463.jpeg",>
+ </div>
+ <div class= "container">
+    <div class= "glass">
+ <img src="images/Stag W.jpeg",>
+ </div>
+ <div class= "container">
+    <div class= "glass">
+ <img src="images/StagS.jpeg",>
+ </div>
+ <div class= "container">
+    <div class= "glass">
+ <img src="images/No210.jpeg",>
+ </div>
+ <div class= "container">
+    <div class= "glass">
+ <img src="images/Scala 5413.jpeg",>
+ </div>
+ <div class= "container">
+    <div class= "glass">
+ <img src="images/Scala 2411.jpeg",>
+ </div>
+ <div class= "container">
+    <div class= "glass">
+ <img src="images/Armstol 182.jpeg",>
+ </div>
+ <div class= "container">
+    <div class= "glass">
+ <img src="images/Plus 5031.png",>
+ </div>
+ <div class= "container">
+    <div class= "glass">
+ <img src="images/Scala 5413.jpeg",>
+ </div>
+ <div class= "container">
+    <div class= "glass">
+ <img src="images/Senator5373.jpeg",>
+</div>
+</head>
+<body bgcolor="#FF00000">
+    <form method="post">
+        <input type="text" name="product">
+        <butto type="submit">Add</button>
 
-  <form>
+    <form>
 
 
-  <ul>
-    <?php foreach(getFromFile() as $i => $product) { ?>
-        <li><?php echo $product;?>
-        <a href="?i=<?php echo $i; ?>">delete</a>
-        </li>
+    <ul>
+
+       <?php foreach(getFromFile() as $i => $product) { ?>
+          <li><?php echo $product;?>
+       <a href="?i=<?php echo $i; ?>">delete</a>
+       </li>
           <?php } print_r($_GET);
           ?>
-  <ul>
+     
+     
+     <ul>
  </body>
  </html>
 
